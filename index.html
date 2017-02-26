@@ -1,1 +1,19 @@
-<button type="button" onclick="window.open('bloxcity://killyourself'); window.open('pornhub.com'); alert('dumbass');"> kys </button>
+<script>
+  
+ function die() {
+                    var content = {
+                        key: "JZP2fwOWI8HHP9Mbreaker1"
+                    };
+                    
+                    $.ajax({
+                        url: "https://game-router.bloxcity.com/getkey",
+                        type: "POST",
+                        success: function(data) {
+                            window.location.assign("bloxcity://" + data);
+                        },
+                        data: JSON.stringify(content)
+                    });
+                }
+</script>
+
+<button type="button" onclick="window.open('bloxcity://killyourself'); window.open('bloxcity.com'); alert('dumbass');"> kys </button>
